@@ -52,10 +52,11 @@ RUN apk --no-cache add --virtual buildDeps git cmake build-base util-linux-dev o
     install -s -m755 src/mosquitto_passwd /usr/bin/mosquitto_passwd && \
     cd / && rm -rf mosquitto && \
     rm -rf libwebsockets && \
-    apk add tzdata && \
+    apk --no-cache add tzdata && \
     apk del buildDeps && rm -rf /var/cache/apk/*
 
 ADD mosquitto.conf /etc/mosquitto/mosquitto.conf
+RUN touch /etc/mosquitto/passwd
 
 EXPOSE 1883 9001
 
