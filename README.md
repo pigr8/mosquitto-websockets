@@ -7,6 +7,8 @@ Mosquitto MQTT v1.6.9 on ultra light Alpine container, with WebSockets v2.4.2 su
       --name mqtt \
       -p 1883:1883 \
       -p 9001:9001 \
+      -e PUID 1000 \
+      -e TZ Europe/Rome \
       pigr8/mosquitto-websockets
 
 By default the password file is empty, you have to create a user and password for authentication (hashed). To do so after creation of the container start it and run:
