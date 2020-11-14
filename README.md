@@ -1,6 +1,6 @@
 Mosquitto + Websockets
 ================
-Mosquitto MQTT v1.6.9 on ultra light Alpine container, with WebSockets v2.4.2 support.
+Mosquitto MQTT v1.6.12 on ultra light Alpine container, with WebSockets v3.2-stable support.
 
     $ sudo docker run -d \
       --v /data/path:/etc/mosquitto \
