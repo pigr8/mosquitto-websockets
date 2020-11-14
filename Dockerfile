@@ -2,7 +2,7 @@ FROM alpine:latest
 
 ENV PATH=/usr/local/bin:/usr/local/sbin:$PATH
 ENV MOSQUITTO_VERSION=1.6.12
-ENV LIBWEBSOCKETS_VERSION=v2.4.2
+ENV LIBWEBSOCKETS_VERSION=v3.2-stable
 ENV TZ=Europe/Rome
 ENV PUID=1000
 
